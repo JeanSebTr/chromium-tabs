@@ -3,8 +3,7 @@
 // http://vincentgable.com
 //
 // Use of this code permitted by copyright holder in this statement:
-// http://vgable.com/blog/2010/08/19/the-most-useful-objective-c-code-ive-
-// ever-written/
+// http://vgable.com/blog/2010/08/19/the-most-useful-objective-c-code-ive-ever-written/
 //
 // based off
 // http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
@@ -31,7 +30,7 @@ static NSString* VTPGStringFromBoolOrCharValue(BOOL boolOrCharvalue) {
 }
 
 static NSString *VTPGStringFromFourCharCodeOrUnsignedInt32(FourCharCode fourcc) {
-  return [NSString stringWithFormat:@"%u ('%c%c%c%c')",
+  return [NSString stringWithFormat:@"%u ('%u%u%u%u')",
           fourcc,
           (fourcc >> 24) & 0xFF,
           (fourcc >> 16) & 0xFF,
