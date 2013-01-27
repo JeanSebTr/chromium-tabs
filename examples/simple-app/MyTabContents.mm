@@ -11,10 +11,7 @@
   // Create a simple NSTextView
   NSTextView* tv = [[NSTextView alloc] initWithFrame:NSZeroRect];
   [tv setFont:[NSFont userFixedPitchFontOfSize:13.0]];
-  [tv setAutoresizingMask:                  NSViewMaxYMargin|
-                          NSViewMinXMargin|NSViewWidthSizable|NSViewMaxXMargin|
-                                           NSViewHeightSizable|
-                                           NSViewMinYMargin];
+  [tv setAutoresizingMask:NSViewMaxYMargin|NSViewMinXMargin|NSViewWidthSizable|NSViewMaxXMargin|NSViewHeightSizable|NSViewMinYMargin];
 
   // Create a NSScrollView to which we add the NSTextView
   NSScrollView *sv = [[NSScrollView alloc] initWithFrame:NSZeroRect];
